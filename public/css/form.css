@@ -1,93 +1,166 @@
 
 body {
-    background-image: url('../uploads/img/fondo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+    background-image: url('../uploads/img/fondo.jpg'); /*Agrega una imagen como fondo*/
+
+    background-size: cover; /*Ajusta la imagen para que cubra todo el área */
+
+    background-position: center; /*Centra la imagen de fondo*/
+
+    background-repeat: no-repeat; /*Evita que la imagen se repita al cubrir el área del fondo*/
+
     background-attachment: fixed; /* Hace que el fondo sea fijo al hacer scroll */
+
     height: 100vh; /*Asegura que el cuerpo ocupe toda la altura de la ventana*/
+
 }
 
 *{
-    margin: 0%;
-    padding: 0%;
+
+    margin: 0%; /*Elimina el margen por defecto de todos los elementos*/
+
+    padding: 0%; /*Elimina el padding por defecto de todos los elementos*/
+
 }
 
-:is(form, .submit, form input, .logo){
-    border: solid 3px rgba(136, 108, 184, 0.459);
+:is(form, .submit, form input, .logo){ /*El selector :is() permite aplicar estilos a múltiples elementos de forma concisa*/
+
+    border: solid 3px rgba(136, 108, 184, 0.459); /*Agrega un borde solido color moradito un poco transparente*/
+
+}
+
+input::placeholder { /*Modifica el texto del placeholder*/
+
+    color: rgba(136, 108, 184, 0.886); /*Agrega un color morado al texto del placeholder*/  
 }
 
 :is(body, form, .logo, .links-container){
-    display: flex;
+
+    display: flex;/*Convierte los elemento en contenedores flexibles*/
+
 }
 
 :is(form, .logo){
-    justify-content: center;
+
+    justify-content: center; /*Centra horizontalmente el contenido dentro del formulario y el logo*/
+
 }
 
 :is(form, .logo, body){
-    align-items: center;
-    flex-direction: column;
+
+    align-items: center; /*Centra verticalmente el contenido dentro del formulario, el logo y el cuerpo*/
+
+    flex-direction: column; /*Organiza los elementos en una columna, colocando el logo encima del formulario y el formulario encima de los enlaces*/
+
 }
 
-:is(form, .submit, .logo){
-    height: auto;
+:is(form, .logo){
+
+    height: auto; /*Permite que el formulario, el botón de envío y el logo ajusten su altura automáticamente según su contenido*/
+
 }
 
 :is(.submit, .form-text, .links-container a){
- color: white;
+
+ color: white; /*Agrega un color blanco al texto del botón de envío y los enlaces*/
+
 }
 
 :is(form, form input){
-    border-radius: 5px;
+
+    border-radius: 5px; /*Agrega bordes redondeados al formulario y a los campos de entrada*/
+
 }
 
 form{
-    width: 25%;
+
+    width: 25%; /*Establece el ancho del formulario al 25% del contenedor padre, lo que permite que se ajuste a diferentes tamaños de pantalla*/
+
 }
 
 form input{
-    margin: 5px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border: none;
+
+    background-color: rgba(255, 255, 255, 0.792); /*Agrega un fondo blanco con algo de transparencia a los campos de entrada*/
+
+    margin: 5px; /*Agrega un margen de 5 píxeles alrededor de cada campo de entrada para separarlos entre sí y del borde del formulario*/
+
+    padding-top: 8px; /*Agrega un padding de 8 píxeles en la parte superior de cada campo de entrada para mejorar la apariencia y la legibilidad del texto dentro de los campos*/
+
+    padding-bottom: 8px; /*Agrega un padding de 8 píxeles en la parte inferior de cada campo de entrada para mejorar la apariencia y la legibilidad del texto dentro de los campos*/
+
+    height: auto; /*Permite que los campos de entrada ajusten su altura automáticamente según su contenido, lo que es útil para campos de texto más largos o para adaptarse a diferentes tamaños de pantalla*/
+
+    width: 80%; /*Establece el ancho de los campos de entrada al 80% del ancho del formulario, lo que permite que se ajusten a diferentes tamaños de pantalla y proporciona un diseño más flexible y adaptable*/
+
+    border: none; /*Elimina el borde predeterminado de los campos de entrada para un diseño más limpio y moderno*/
+    
 }
+
 .submit{
-    border-radius: 25px;
-    font-size: 15px;
-    margin: 10px;
-    width: 60%;
-    cursor: pointer;
-    padding: 5px 20px;
+    background-color: rgba(136, 108, 184, 0.459); /*Agrega un fondo morado con algo de transparencia al botón de envío*/
+
+    border-radius: 25px; /*Agrega bordes redondeados al botón de envío para un diseño más suave y moderno*/
+
+    font-size: 2.5vh; /*Establece el tamaño de fuente del texto dentro del botón de envío a 15 píxeles para mejorar la legibilidad y la apariencia del botón*/
+
+    margin: 10px; /*Agrega un margen de 10 píxeles alrededor del botón de envío para separarlo de otros elementos y mejorar la apariencia general del formulario*/
+
+    cursor: pointer; /*Agrega un cursor de puntero al pasar el mouse sobre el botón de envío para indicar que es interactivo*/
+
+    width: 40%; /*Establece el ancho del botón de envío al 40% del ancho del formulario, lo que permite que se ajuste a diferentes tamaños de pantalla y proporciona un diseño más flexible y adaptable*/
+
+    height: 20%; /*Establece la altura del botón de envío al 20% de la altura del formulario*/
+
 }
 
 .logo{
-    border-radius: 50%;
-    width: auto;
-    margin-bottom: 20px;
-    margin-top: 40px;
+
+    border-radius: 50%; /*Agrega bordes redondeados al logo para darle una forma circular*/
+
+    width: auto; /*Permite que el logo ajuste su ancho automáticamente según su contenido*/
+
+    margin-bottom: 20px; /*Agrega un margen de 20 píxeles en la parte inferior del logo para separarlo de otros elementos*/
+
+    margin-top: 40px; /*Agrega un margen de 40 píxeles en la parte superior del logo para separarlo de otros elementos y mejorar la apariencia general del formulario*/
+
 }
 
 img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; 
+
+    width: 100px; /*Establece el ancho de la imagen al 100 píxeles*/
+
+    height: 100px; /*Establece la altura de la imagen al 100 píxeles*/
+
+    border-radius: 50%; /*Agrega bordes redondeados a la imagen para darle una forma circular*/
+
 }
 
 .form-text{
-    font-size: 20px;
-    margin-top: 10px;
-    margin-left: 0px;
-}   
-.links-container{
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 20px;
+
+    font-size: 20px; /*Establece el tamaño de fuente del texto dentro del formulario a 20 píxeles para mejorar la legibilidad y la apariencia del formulario*/
+
+    margin-top: 10px; /*Agrega un margen de 10 píxeles en la parte superior del texto dentro del formulario para separarlo de otros elementos y mejorar la apariencia general del formulario*/
+
+    margin-left: 0px; /*Elimina el margen izquierdo del texto dentro del formulario para alinear el texto con los campos de entrada y el botón de envío, lo que mejora la apariencia general del formulario*/
+
 }
+
+.links-container{
+
+    justify-content: space-between; /*Distribuye los enlaces dentro del contenedor de enlaces de manera uniforme, dejando espacio entre ellos para mejorar la apariencia y la legibilidad*/
+
+    width: 100%; /*Establece el ancho del contenedor de enlaces al 100% del contenedor padre, lo que permite que se ajuste a diferentes tamaños de pantalla y proporciona un diseño más flexible y adaptable*/
+
+    padding: 0 20px; /*Agrega un padding de 20 píxeles a los lados del contenedor de enlaces para separar los enlaces del borde del contenedor y mejorar la apariencia general del formulario*/
+
+}
+
 .links-container a{
-    text-decoration: none;
-    font-size: 14px;
-    padding: 5px;
+
+    text-decoration: none; /*Elimina la decoración de texto predeterminada de los enlaces para un diseño más limpio y moderno*/
+
+    font-size: 14px; /*Establece el tamaño de fuente del texto dentro de los enlaces a 14 píxeles para mejorar la legibilidad y la apariencia de los enlaces*/
+
+    padding: 5px; /*Agrega un padding de 5 píxeles alrededor del texto dentro de los enlaces para mejorar la apariencia y la legibilidad de los enlaces*/
+    
 }
