@@ -32,6 +32,7 @@ body {
 input::placeholder { /*Modifica el texto del placeholder*/
 
     color: rgba(136, 108, 184, 0.886); /*Agrega un color morado al texto del placeholder*/  
+    padding-left: 8%; /*Agrega un padding a la izquierda del texto del placeholder*/
 }
 
 :is(body, form, .logo, .links-container){
@@ -74,42 +75,45 @@ input::placeholder { /*Modifica el texto del placeholder*/
 
 form{
 
-    width: 25%; /*Establece el ancho del formulario al 25% del contenedor padre, lo que permite que se ajuste a diferentes tamaños de pantalla*/
-
+    width: 25%; /*Establece el ancho del formulario al 25% del contenedor padre*/
 }
 
 form input{
 
     background-color: rgba(255, 255, 255, 0.792); /*Agrega un fondo blanco con algo de transparencia a los campos de entrada*/
 
-    margin: 5px; /*Agrega un margen de 5 píxeles alrededor de cada campo de entrada para separarlos entre sí y del borde del formulario*/
+    margin: 5px; /*Agrega un margen de 5 píxeles alrededor de cada campo de entrada*/
 
-    padding-top: 8px; /*Agrega un padding de 8 píxeles en la parte superior de cada campo de entrada para mejorar la apariencia y la legibilidad del texto dentro de los campos*/
+    padding-top: 8px; /*Agrega un padding de 8 píxeles en la parte superior de cada campo de entrada*/
 
-    padding-bottom: 8px; /*Agrega un padding de 8 píxeles en la parte inferior de cada campo de entrada para mejorar la apariencia y la legibilidad del texto dentro de los campos*/
+    padding-bottom: 8px; /*Agrega un padding de 8 píxeles en la parte inferior de cada campo de entrada*/
 
-    height: auto; /*Permite que los campos de entrada ajusten su altura automáticamente según su contenido, lo que es útil para campos de texto más largos o para adaptarse a diferentes tamaños de pantalla*/
+    height: auto; /*Permite que los campos de entrada ajusten su altura automáticamente según su contenido*/
 
-    width: 80%; /*Establece el ancho de los campos de entrada al 80% del ancho del formulario, lo que permite que se ajusten a diferentes tamaños de pantalla y proporciona un diseño más flexible y adaptable*/
+    width: 80%; /*Establece el ancho de los campos de entrada al 80% del ancho del formulario*/
 
-    border: none; /*Elimina el borde predeterminado de los campos de entrada para un diseño más limpio y moderno*/
+    border: none; /*Elimina el borde predeterminado de los campos de entrada*/
     
 }
 
 .submit{
     background-color: rgba(136, 108, 184, 0.459); /*Agrega un fondo morado con algo de transparencia al botón de envío*/
 
-    border-radius: 25px; /*Agrega bordes redondeados al botón de envío para un diseño más suave y moderno*/
+    border-radius: 25px; /*Agrega bordes redondeados al botón de envío*/
 
-    font-size: 2.5vh; /*Establece el tamaño de fuente del texto dentro del botón de envío a 15 píxeles para mejorar la legibilidad y la apariencia del botón*/
+    font-size: 2.5vh; /*Establece el tamaño de fuente del texto dentro del botón de envío a 15 píxeles*/
 
-    margin: 10px; /*Agrega un margen de 10 píxeles alrededor del botón de envío para separarlo de otros elementos y mejorar la apariencia general del formulario*/
+    margin: 10px; /*Agrega un margen de 10 píxeles alrededor del botón de envío*/
 
-    cursor: pointer; /*Agrega un cursor de puntero al pasar el mouse sobre el botón de envío para indicar que es interactivo*/
+    cursor: pointer; /*Agrega un cursor de puntero al pasar el mouse sobre el botón de envío*/
 
-    width: 40%; /*Establece el ancho del botón de envío al 40% del ancho del formulario, lo que permite que se ajuste a diferentes tamaños de pantalla y proporciona un diseño más flexible y adaptable*/
+    width: 40%; /*Establece el ancho del botón de envío al 40% del ancho del formulario*/
 
     height: 20%; /*Establece la altura del botón de envío al 20% de la altura del formulario*/
+
+    padding-bottom: 2%; /*Agrega un padding del 2% en la parte inferior del botón de envío*/
+
+    padding-top: 2%; /*Agrega un padding del 2% en la parte superior del botón de envío*/
 
 }
 
@@ -162,5 +166,5 @@ img{
     font-size: 14px; /*Establece el tamaño de fuente del texto dentro de los enlaces a 14 píxeles para mejorar la legibilidad y la apariencia de los enlaces*/
 
     padding: 5px; /*Agrega un padding de 5 píxeles alrededor del texto dentro de los enlaces para mejorar la apariencia y la legibilidad de los enlaces*/
-    
+
 }
