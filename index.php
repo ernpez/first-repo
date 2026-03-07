@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="public/css/form.css">
 
     <script src="public/js/script.js"></script>
-
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Formulario de pruebas</title>
@@ -16,7 +16,7 @@
 
     <form action="post.php" method="post" >
         <div class="form-text">Usuario</div>
-        <input type="text" name="user" placeholder="Usurio" class="">
+        <input type="text" name="user" placeholder="Usuario" class="">
         <div class="form-text">Clave</div>
         <input type="password" name="pass" placeholder="Clave de Acceso">
 
